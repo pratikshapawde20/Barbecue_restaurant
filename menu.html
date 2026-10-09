@@ -1,0 +1,545 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#faf7f0">
+  <meta name="description" content="Explore The Grill's Korean BBQ, grilled meats, Korean sides and traditional meals in Daejeon, South Korea.">
+  <title>메뉴 | 더 그릴 - The Grill Korean BBQ</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Gowun+Batang:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/menu.css" type="text/css">
+  <script src="css/js/menu.js" defer></script>
+</head>
+
+<body>
+  <div class="announcement" data-i18n="announcement">
+    GOOD FOOD · LIVE FIRE · GREAT COMPANY
+  </div>
+
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="brand" aria-label="The Grill home">
+        <span class="brand-logo"><span>火</span></span>
+        <span class="brand-text">
+          <strong>더 그릴</strong>
+          <small>THE GRILL · KOREAN BBQ</small>
+        </span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="index.html" data-i18n="navHome">홈</a>
+        <a href="menu.html" class="active" data-i18n="Menu">메뉴</a>
+        <a href="about.html" data-i18n="About Us">우리 이야기</a>
+        <a href="contact.html" data-i18n="Contact">오시는 길</a>
+        <a href="reservation.html" class="nav-book" data-i18n="navBook">예약하기 ↗</a>
+      </nav>
+
+      <div class="header-actions">
+        <label for="language" class="sr-only">Choose language</label>
+        <select id="language" aria-label="Choose language">
+          <option value="ko">한국어 🇰🇷</option>
+          <option value="en">English 🇬🇧</option>
+        </select>
+
+        <button class="menu-toggle" id="menuToggle"
+          aria-label="Open navigation" aria-expanded="false"
+          aria-controls="navLinks">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="menu-hero">
+      <div class="hero-photo"></div>
+      <div class="hero-shade"></div>
+
+      <div class="container hero-content">
+        <p class="eyebrow light-eyebrow">
+          <span></span>
+          <span data-i18n="heroEyebrow">THE GRILL MENU</span>
+        </p>
+
+        <h1 data-i18n="heroTitle">
+          더 그릴의 특별한 메뉴<br>
+          <em>Our Signature Menu</em>
+        </h1>
+
+        <p class="hero-description" data-i18n="heroDescription">
+          신선한 재료와 정성스러운 손길로 완성한
+          더 그릴만의 한국식 바비큐를 만나보세요.
+        </p>
+
+        <a class="btn btn-primary" href="#menu-list">
+          <span data-i18n="heroButton">메뉴 둘러보기</span>
+          <span aria-hidden="true">↓</span>
+        </a>
+      </div>
+
+      <div class="hero-note">
+        <span>맛있는 순간,</span>
+        <span>함께하는 행복</span>
+      </div>
+    </section>
+
+    <!-- CATEGORY FILTER -->
+    <section class="category-bar" aria-label="Menu categories">
+      <div class="container category-list">
+        <button class="category-btn active" data-filter="all"
+          aria-pressed="true">
+          <span class="category-icon">✳</span>
+          <span><strong data-i18n="catAll">전체 메뉴</strong><small>All Menu</small></span>
+        </button>
+
+        <button class="category-btn" data-filter="meat" aria-pressed="false">
+          <span class="category-icon">♨</span>
+          <span><strong data-i18n="catMeat">고기류</strong><small>Meat</small></span>
+        </button>
+
+        <button class="category-btn" data-filter="sides" aria-pressed="false">
+          <span class="category-icon">❋</span>
+          <span><strong data-i18n="catSides">사이드 메뉴</strong><small>Sides</small></span>
+        </button>
+
+        <button class="category-btn" data-filter="meals" aria-pressed="false">
+          <span class="category-icon">◉</span>
+          <span><strong data-i18n="catMeals">식사류</strong><small>Meals</small></span>
+        </button>
+
+        <button class="category-btn" data-filter="drinks" aria-pressed="false">
+          <span class="category-icon">♧</span>
+          <span><strong data-i18n="catDrinks">음료</strong><small>Drinks</small></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- MENU CONTENT -->
+    <section class="menu-section" id="menu-list">
+      <div class="container">
+        <div class="menu-layout">
+          <div class="menu-main">
+            <div class="menu-intro">
+              <p class="eyebrow"><span></span><span data-i18n="menuEyebrow">MADE FOR THE TABLE</span></p>
+              <h2 data-i18n="menuTitle">좋은 음식, 함께 나누는 즐거움.</h2>
+              <p data-i18n="menuDescription">
+                정성스럽게 준비한 고기와 한국의 다채로운 맛을 만나보세요.
+              </p>
+            </div>
+
+            <div class="section-heading">
+              <h3 data-i18n="meatHeading">고기류 <em>Meat</em></h3>
+              <p data-i18n="meatSub">Premium cuts, grilled to perfection.</p>
+            </div>
+
+            <div class="dish-grid">
+              <article class="dish-card" data-category="meat">
+                <div class="dish-image">
+                  <img src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=850&q=85"
+                    alt="Korean-style grilled pork belly" loading="lazy">
+                  <span class="dish-tag" data-i18n="tagPopular">인기 메뉴 · Popular</span>
+                </div>
+                <div class="dish-body">
+                  <div class="dish-title-row">
+                    <div><h4 data-i18n="porkName">삼겹살</h4><p class="english-name">Grilled Pork Belly</p></div>
+                    <span class="price">₩18,000</span>
+                  </div>
+                  <p class="dish-description" data-i18n="porkDesc">
+                    노릇하게 구워 고소한 풍미와 부드러운 식감을 즐기는 대표적인 한국식 바비큐입니다.
+                  </p>
+                  <details class="ingredients">
+                    <summary data-i18n="ingredientsLabel">재료 및 알레르기 정보</summary>
+                    <p data-i18n="porkIngredients">돼지고기. 양념 및 곁들임은 주문 전 직원에게 확인해 주세요.</p>
+                  </details>
+                </div>
+              </article>
+
+              <article class="dish-card" data-category="meat">
+                <div class="dish-image">
+                  <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=850&q=85"
+                    alt="Grilled beef barbecue" loading="lazy">
+                  <span class="dish-tag" data-i18n="tagPremium">프리미엄 · Premium</span>
+                </div>
+                <div class="dish-body">
+                  <div class="dish-title-row">
+                    <div><h4 data-i18n="beefName">한우 갈비살</h4><p class="english-name">Korean Beef Short Rib</p></div>
+                    <span class="price">₩32,000</span>
+                  </div>
+                  <p class="dish-description" data-i18n="beefDesc">
+                    풍부한 육즙과 깊은 풍미를 즐길 수 있는 소고기 바비큐 메뉴입니다.
+                  </p>
+                  <details class="ingredients">
+                    <summary data-i18n="ingredientsLabel">재료 및 알레르기 정보</summary>
+                    <p data-i18n="beefIngredients">소고기. 원산지와 실제 제공 부위는 매장에 확인해 주세요.</p>
+                  </details>
+                </div>
+              </article>
+
+              <article class="dish-card" data-category="meat">
+                <div class="dish-image">
+                  <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=850&q=85"
+                    alt="Korean marinated beef barbecue" loading="lazy">
+                </div>
+                <div class="dish-body">
+                  <div class="dish-title-row">
+                    <div><h4 data-i18n="bulgogiName">양념 소불고기</h4><p class="english-name">Marinated Beef Bulgogi</p></div>
+                    <span class="price">₩22,000</span>
+                  </div>
+                  <p class="dish-description" data-i18n="bulgogiDesc">
+                    달콤하고 감칠맛 나는 양념과 어우러지는 한국식 소불고기입니다.
+                  </p>
+                  <details class="ingredients">
+                    <summary data-i18n="ingredientsLabel">재료 및 알레르기 정보</summary>
+                    <p data-i18n="bulgogiIngredients">소고기 및 양념. 간장 등 알레르기 유발 성분을 직원에게 확인해 주세요.</p>
+                  </details>
+                </div>
+              </article>
+
+              <article class="dish-card" data-category="meat">
+                <div class="dish-image">
+                  <img src="https://images.unsplash.com/photo-1603360946369-dc9bb6258143?auto=format&fit=crop&w=850&q=85"
+                    alt="Spicy Korean pork barbecue" loading="lazy">
+                </div>
+                <div class="dish-body">
+                  <div class="dish-title-row">
+                    <div><h4 data-i18n="spicyPorkName">매콤 돼지불고기</h4><p class="english-name">Spicy Pork Bulgogi</p></div>
+                    <span class="price">₩19,000</span>
+                  </div>
+                  <p class="dish-description" data-i18n="spicyPorkDesc">
+                    매콤한 양념이 고기에 배어들어 입맛을 돋우는 메뉴입니다.
+                  </p>
+                  <details class="ingredients">
+                    <summary data-i18n="ingredientsLabel">재료 및 알레르기 정보</summary>
+                    <p data-i18n="spicyPorkIngredients">돼지고기와 매콤한 양념. 고추 및 양념 성분은 직원에게 확인해 주세요.</p>
+                  </details>
+                </div>
+              </article>
+
+              <article class="dish-card" data-category="meat">
+                <div class="dish-image">
+                  <img src="image/Screenshot 2026-10-10 021124.png"
+                    alt="Grilled chicken with seasoning" loading="lazy">
+                </div>
+                <div class="dish-body">
+                  <div class="dish-title-row">
+                    <div><h4 data-i18n="chickenName">닭갈비</h4><p class="english-name">Spicy Grilled Chicken</p></div>
+                    <span class="price">₩17,000</span>
+                  </div>
+                  <p class="dish-description" data-i18n="chickenDesc">
+                    매콤한 양념과 쫄깃한 닭고기가 어우러지는 풍성한 메뉴입니다.
+                  </p>
+                  <details class="ingredients">
+                    <summary data-i18n="ingredientsLabel">재료 및 알레르기 정보</summary>
+                    <p data-i18n="chickenIngredients">닭고기 및 양념. 사용 재료와 알레르기 정보는 매장에 확인해 주세요.</p>
+                  </details>
+                </div>
+              </article>
+
+              <article class="dish-card" data-category="meat">
+                <div class="dish-image">
+                  <img src="https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=850&q=85"
+                    alt="Assorted grilled meats" loading="lazy">
+                  <span class="dish-tag" data-i18n="tagShare">함께 즐기는 메뉴</span>
+                </div>
+                <div class="dish-body">
+                  <div class="dish-title-row">
+                    <div><h4 data-i18n="platterName">모둠 한판</h4><p class="english-name">Special Grill Platter</p></div>
+                    <span class="price">₩48,000</span>
+                  </div>
+                  <p class="dish-description" data-i18n="platterDesc">
+                    다양한 고기를 한자리에서 함께 즐기기 좋은 바비큐 모둠 메뉴입니다.
+                  </p>
+                  <details class="ingredients">
+                    <summary data-i18n="ingredientsLabel">재료 및 알레르기 정보</summary>
+                    <p data-i18n="platterIngredients">구성 고기는 달라질 수 있습니다. 주문 전에 직원에게 재료를 확인해 주세요.</p>
+                  </details>
+                </div>
+              </article>
+
+              <!-- SIDES -->
+              <article class="dish-card" data-category="sides">
+                <div class="dish-image">
+                  <img src="https://images.unsplash.com/photo-1496116218417-1a781b1c416c?auto=format&fit=crop&w=850&q=85"
+                    alt="Korean kimchi side dish" loading="lazy">
+                </div>
+                <div class="dish-body">
+                  <div class="dish-title-row">
+                    <div><h4 data-i18n="kimchiName">김치전</h4><p class="english-name">Kimchi Pancake</p></div>
+                    <span class="price">₩12,000</span>
+                  </div>
+                  <p class="dish-description" data-i18n="kimchiDesc">
+                    김치의 새콤한 풍미를 바삭한 전으로 즐겨 보세요.
+                  </p>
+                  <details class="ingredients">
+                    <summary data-i18n="ingredientsLabel">재료 및 알레르기 정보</summary>
+                    <p data-i18n="kimchiIngredients">김치와 반죽. 밀, 달걀 등 포함 여부를 직원에게 확인해 주세요.</p>
+                  </details>
+                </div>
+              </article>
+
+              <article class="dish-card" data-category="sides">
+                <div class="dish-image">
+                  <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=850&q=85"
+                    alt="Fresh Korean-style vegetable side dish" loading="lazy">
+                </div>
+                <div class="dish-body">
+                  <div class="dish-title-row">
+                    <div><h4 data-i18n="saladName">신선한 채소</h4><p class="english-name">Fresh Vegetable Salad</p></div>
+                    <span class="price">₩7,000</span>
+                  </div>
+                  <p class="dish-description" data-i18n="saladDesc">
+                    고기와 곁들여 먹기 좋은 산뜻한 채소 메뉴입니다.
+                  </p>
+                  <details class="ingredients">
+                    <summary data-i18n="ingredientsLabel">재료 및 알레르기 정보</summary>
+                    <p data-i18n="saladIngredients">채소와 드레싱. 드레싱 성분은 직원에게 확인해 주세요.</p>
+                  </details>
+                </div>
+              </article>
+
+              <article class="dish-card" data-category="sides">
+                <div class="dish-image">
+                  <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=850&q=85"
+                    alt="Korean-style glass noodles" loading="lazy">
+                </div>
+                <div class="dish-body">
+                  <div class="dish-title-row">
+                    <div><h4 data-i18n="japchaeName">잡채</h4><p class="english-name">Korean Glass Noodles</p></div>
+                    <span class="price">₩10,000</span>
+                  </div>
+                  <p class="dish-description" data-i18n="japchaeDesc">
+                    쫄깃한 당면과 채소가 어우러지는 한국식 잡채입니다.
+                  </p>
+                  <details class="ingredients">
+                    <summary data-i18n="ingredientsLabel">재료 및 알레르기 정보</summary>
+                    <p data-i18n="japchaeIngredients">당면, 채소 및 양념. 간장 등 성분을 직원에게 확인해 주세요.</p>
+                  </details>
+                </div>
+              </article>
+
+              <!-- MEALS -->
+              <article class="dish-card" data-category="meals">
+                <div class="dish-image">
+                  <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=850&q=85"
+                    alt="Korean noodle soup" loading="lazy">
+                </div>
+                <div class="dish-body">
+                  <div class="dish-title-row">
+                    <div><h4 data-i18n="noodlesName">냉면</h4><p class="english-name">Korean Cold Noodles</p></div>
+                    <span class="price">₩8,000</span>
+                  </div>
+                  <p class="dish-description" data-i18n="noodlesDesc">
+                    깔끔하고 시원하게 즐기기 좋은 한국식 면 요리입니다.
+                  </p>
+                  <details class="ingredients">
+                    <summary data-i18n="ingredientsLabel">재료 및 알레르기 정보</summary>
+                    <p data-i18n="noodlesIngredients">면과 육수. 메밀, 밀 등 알레르기 성분을 직원에게 확인해 주세요.</p>
+                  </details>
+                </div>
+              </article>
+
+              <article class="dish-card" data-category="meals">
+                <div class="dish-image">
+                  <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=850&q=85"
+                    alt="Korean spicy stew" loading="lazy">
+                </div>
+                <div class="dish-body">
+                  <div class="dish-title-row">
+                    <div><h4 data-i18n="stewName">김치찌개</h4><p class="english-name">Kimchi Stew</p></div>
+                    <span class="price">₩8,000</span>
+                  </div>
+                  <p class="dish-description" data-i18n="stewDesc">
+                    김치의 깊은 풍미를 따뜻하게 즐기는 든든한 찌개입니다.
+                  </p>
+                  <details class="ingredients">
+                    <summary data-i18n="ingredientsLabel">재료 및 알레르기 정보</summary>
+                    <p data-i18n="stewIngredients">김치와 육수. 고기 및 육수 재료는 직원에게 확인해 주세요.</p>
+                  </details>
+                </div>
+              </article>
+
+              <article class="dish-card" data-category="meals">
+                <div class="dish-image">
+                  <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=850&q=85"
+                    alt="Steamed white rice and Korean meal" loading="lazy">
+                </div>
+                <div class="dish-body">
+                  <div class="dish-title-row">
+                    <div><h4 data-i18n="riceName">공기밥</h4><p class="english-name">Steamed Rice</p></div>
+                    <span class="price">₩2,000</span>
+                  </div>
+                  <p class="dish-description" data-i18n="riceDesc">
+                    고기와 찌개를 더욱 맛있게 즐기도록 곁들이는 따뜻한 밥입니다.
+                  </p>
+                  <details class="ingredients">
+                    <summary data-i18n="ingredientsLabel">재료 및 알레르기 정보</summary>
+                    <p data-i18n="riceIngredients">쌀. 조리 환경 및 교차 접촉에 관한 정보는 직원에게 확인해 주세요.</p>
+                  </details>
+                </div>
+              </article>
+
+              <!-- DRINKS -->
+              <article class="dish-card" data-category="drinks">
+                <div class="dish-image">
+                  <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=850&q=85"
+                    alt="Korean dining beverage" loading="lazy">
+                </div>
+                <div class="dish-body">
+                  <div class="dish-title-row">
+                    <div><h4 data-i18n="softDrinkName">음료</h4><p class="english-name">Soft Drinks</p></div>
+                    <span class="price">₩2,000</span>
+                  </div>
+                  <p class="dish-description" data-i18n="softDrinkDesc">
+                    식사와 함께 시원하게 즐기는 음료입니다.
+                  </p>
+                  <details class="ingredients">
+                    <summary data-i18n="ingredientsLabel">재료 및 알레르기 정보</summary>
+                    <p data-i18n="softDrinkIngredients">종류와 성분은 주문 전에 직원에게 확인해 주세요.</p>
+                  </details>
+                </div>
+              </article>
+
+              <article class="dish-card" data-category="drinks">
+                <div class="dish-image">
+                  <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=850&q=85"
+                    alt="Korean dining beverage" loading="lazy">
+                </div>
+                <div class="dish-body">
+                  <div class="dish-title-row">
+                    <div><h4 data-i18n="teaName">전통차</h4><p class="english-name">Traditional Tea</p></div>
+                    <span class="price">₩4,000</span>
+                  </div>
+                  <p class="dish-description" data-i18n="teaDesc">
+                    식사 후 여유롭게 마시기 좋은 따뜻하거나 시원한 차입니다.
+                  </p>
+                  <details class="ingredients">
+                    <summary data-i18n="ingredientsLabel">재료 및 알레르기 정보</summary>
+                    <p data-i18n="teaIngredients">차 종류와 제공 방식은 매장에 확인해 주세요.</p>
+                  </details>
+                </div>
+              </article>
+            </div>
+
+            <p class="menu-disclaimer" data-i18n="disclaimer">
+              안내된 메뉴와 가격은 예시입니다. 실제 메뉴, 가격, 원산지, 재료 및 알레르기 정보는 매장에 확인해 주세요.
+            </p>
+          </div>
+
+          <!-- SIDEBAR -->
+          <aside class="menu-sidebar">
+            <div class="sidebar-image">
+              <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=750&q=85"
+                alt="Fresh ingredients prepared for Korean BBQ" loading="lazy">
+              <div class="sidebar-shade"></div>
+              <div class="sidebar-copy">
+                <span class="sidebar-korean" data-i18n="sidebarEyebrow">더 그릴의 약속</span>
+                <h3 data-i18n="sidebarTitle">신선한 재료,<br>함께 나누는 맛.</h3>
+                <p data-i18n="sidebarText">
+                  좋은 음식은 정성에서 시작됩니다. 함께하는 모든 순간이 특별하도록 준비합니다.
+                </p>
+              </div>
+            </div>
+
+            <div class="promise-list">
+              <div class="promise-item">
+                <span>01</span>
+                <div>
+                  <h4 data-i18n="promise1Title">정성스러운 준비</h4>
+                  <p data-i18n="promise1Text">한 끼 한 끼 소중하게 준비합니다.</p>
+                </div>
+              </div>
+              <div class="promise-item">
+                <span>02</span>
+                <div>
+                  <h4 data-i18n="promise2Title">함께하는 즐거움</h4>
+                  <p data-i18n="promise2Text">가족과 친구가 모이는 따뜻한 식탁.</p>
+                </div>
+              </div>
+              <div class="promise-item">
+                <span>03</span>
+                <div>
+                  <h4 data-i18n="promise3Title">한국식 바비큐</h4>
+                  <p data-i18n="promise3Text">불판 위에서 완성되는 즐거운 식사.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="sidebar-cta">
+              <span class="cta-symbol">더 그릴</span>
+              <h3 data-i18n="sidebarCtaTitle">함께 즐기는<br>특별한 식사.</h3>
+              <p data-i18n="sidebarCtaText">소중한 사람들과의 자리를 예약해 보세요.</p>
+              <a href="reservation.html" class="btn btn-primary">
+                <span data-i18n="sidebarCtaButton">테이블 예약</span>
+                <span>↗</span>
+              </a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESERVATION BANNER -->
+    <section class="reservation-banner">
+      <div class="reservation-photo"></div>
+      <div class="reservation-overlay"></div>
+      <div class="container reservation-inner">
+        <div>
+          <p class="reservation-korean" data-i18n="bannerKorean">맛있는 순간, 함께하는 행복</p>
+          <h2 data-i18n="bannerTitle">좋은 음식과 함께하는<br><em>다음 순간을 예약하세요.</em></h2>
+          <p data-i18n="bannerText">더 그릴에서 소중한 사람들과 특별한 식사를 즐겨보세요.</p>
+        </div>
+        <div class="reservation-actions">
+          <a href="reservation.html" class="btn btn-primary">
+            <span data-i18n="reserveButton">예약하기</span><span>↗</span>
+          </a>
+          <a href="tel:+82423000448" class="btn btn-outline">
+            <span data-i18n="callButton">전화하기</span><span>↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-main">
+        <a href="index.html" class="brand footer-brand">
+          <span class="brand-logo"><span>火</span></span>
+          <span class="brand-text">
+            <strong>더 그릴</strong>
+            <small>THE GRILL · KOREAN BBQ</small>
+          </span>
+        </a>
+
+        <div class="footer-address">
+          <p data-i18n="footerAddress">
+            19beonji 327 Gap-dong, Yuseong District,<br>
+            Daejeon, South Korea
+          </p>
+          <a href="tel:+82423000448">+82 42-300-0448</a>
+          <p data-i18n="footerHours">Opens at 11:00 AM. Please call to confirm closing time.</p>
+        </div>
+
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="index.html" data-i18n="navHome">홈</a>
+          <a href="menu.html" data-i18n="navMenu">메뉴</a>
+          <a href="about.html" data-i18n="navAbout">우리 이야기</a>
+          <a href="contact.html" data-i18n="navContact">오시는 길</a>
+          <a href="reservation.html" data-i18n="navBook">예약하기</a>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> 더 그릴 · The Grill. <span data-i18n="copyright">All rights reserved.</span></p>
+        <p data-i18n="footerTagline">맛있는 순간, 함께하는 행복.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,462 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#faf6ed">
+  <meta name="description" content="Discover The Grill, 더 그릴 — Korean BBQ, warm hospitality and memorable meals in Daejeon, South Korea.">
+  <title>우리 이야기 | About Us — The Grill</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Gowun+Batang:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/about.css" type="text/css">
+  <script src="css/js/about.js" defer></script>
+</head>
+
+<body>
+  <div class="announcement" data-i18n="announcement">
+    GOOD FOOD · LIVE FIRE · GREAT COMPANY
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a class="brand" href="index.html" aria-label="The Grill home">
+        <span class="brand-logo"><span>더</span></span>
+        <span class="brand-text">
+          <strong>더 그릴</strong>
+          <small>THE GRILL · KOREAN BBQ</small>
+        </span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="index.html">
+          <span data-i18n="navHomeKo">홈</span>
+          <!-- <small data-i18n="navHomeEn">Home</small> -->
+        </a>
+        <a href="menu.html">
+          <span data-i18n="navMenuKo">메뉴</span>
+          <!-- <small data-i18n="navMenuEn">Menu</small> -->
+        </a>
+        <a href="about.html" class="active" aria-current="page">
+          <span data-i18n="navAboutKo">우리 이야기</span>
+          <!-- <small data-i18n="navAboutEn">Our Story</small> -->
+        </a>
+        <a href="contact.html">
+          <span data-i18n="navContactKo">오시는 길</span>
+          <!-- <small data-i18n="navContactEn">Location</small> -->
+        </a>
+        <a href="reservation.html" class="nav-reserve">
+          <span data-i18n="navReserveKo">예약하기</span>
+          <!-- <small data-i18n="navReserveEn">Reservation ↗</small> -->
+        </a>
+      </nav>
+
+      <div class="header-actions">
+        <label class="sr-only" for="language">Language</label>
+        <select id="language" aria-label="Choose language">
+          <option value="ko">한국어</option>
+          <option value="en">English</option>
+        </select>
+
+        <button class="menu-toggle" id="menuToggle"
+          aria-label="Open navigation" aria-expanded="false"
+          aria-controls="navLinks">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="about-hero">
+      <div class="hero-photo" role="img"
+        aria-label="Korean barbecue grilling over a warm charcoal fire"></div>
+      <div class="hero-shade"></div>
+
+      <div class="container hero-content">
+        <p class="eyebrow hero-eyebrow">
+          <span></span>
+          <span data-i18n="heroEyebrow">OUR STORY · 우리의 이야기</span>
+        </p>
+
+        <h1 data-i18n="heroTitle">
+          더 그릴, 맛으로 이어지는 이야기
+        </h1>
+
+        <p class="hero-subtitle" data-i18n="heroSubtitle">
+          The Grill, A Story of Great Taste
+        </p>
+
+        <p class="hero-description" data-i18n="heroDescription">
+          좋은 음식과 따뜻한 환대, 그리고 함께하는 시간.<br>
+          더 그릴은 식사 이상의 특별한 순간을 소중히 생각합니다.
+        </p>
+
+        <a href="#our-story" class="hero-link">
+          <span data-i18n="discover">우리 이야기 알아보기</span>
+          <span class="arrow">↓</span>
+        </a>
+      </div>
+
+      <div class="hero-signature" aria-hidden="true">
+        <span data-i18n="signature1">좋은 음식,</span>
+        <span data-i18n="signature2">좋은 사람들,</span>
+        <span data-i18n="signature3">더 그릴.</span>
+        <b>더</b>
+      </div>
+
+      <div class="hero-bottom-label">
+        DAEJEON, SOUTH KOREA <span>·</span> 더 그릴
+      </div>
+    </section>
+
+    <!-- INTRODUCTION -->
+    <section class="story-section section-pad" id="our-story">
+      <div class="container story-grid">
+        <div class="story-copy reveal">
+          <p class="eyebrow">
+            <span></span>
+            <span data-i18n="storyEyebrow">THE HEART OF THE GRILL</span>
+          </p>
+
+          <h2 data-i18n="storyTitle">
+            한 끼의 식사에<br>마음을 담습니다.
+          </h2>
+
+          <p class="english-heading" data-i18n="storyEnglishTitle">
+            More Than a Meal
+          </p>
+
+          <p data-i18n="storyP1">
+            한국에서 식사는 단순히 배를 채우는 시간이 아닙니다.
+            가족과 친구가 둘러앉고, 이야기를 나누고, 하루의 기쁨을
+            함께 나누는 소중한 시간입니다.
+          </p>
+
+          <p data-i18n="storyP2">
+            더 그릴은 이러한 한국의 식문화와 함께하는 즐거움에서
+            영감을 얻습니다. 맛있는 음식, 편안한 분위기, 따뜻한
+            환대로 여러분의 식사 시간이 오래 기억되기를 바랍니다.
+          </p>
+
+          <p data-i18n="storyP3">
+            특별한 기념일부터 평범한 저녁까지, 소중한 사람들과
+            함께하는 순간을 더 맛있고 따뜻하게 만들어 갑니다.
+          </p>
+
+          <div class="story-quote">
+            <span class="quote-mark">“</span>
+            <blockquote data-i18n="quote">
+              좋은 음식은 사람과 사람 사이의 거리를 좁혀 줍니다.
+            </blockquote>
+            <p data-i18n="quoteEnglish">Good food brings people closer.</p>
+            <span class="quote-line"></span>
+          </div>
+        </div>
+
+        <div class="story-image-main reveal">
+          <img
+            src="https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=1100&q=85"
+            alt="Korean barbecue meat prepared for grilling"
+            loading="lazy">
+          <div class="image-caption">
+            <span data-i18n="imageLabel1">THE ART OF KOREAN BBQ</span>
+            <p data-i18n="imageCaption1">불 위에서 완성되는 깊은 맛</p>
+          </div>
+          <span class="image-index">01 / 03</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- THREE PILLARS / PHOTO CARDS -->
+    <section class="experience-section section-pad">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">
+            <span></span>
+            <span data-i18n="experienceEyebrow">WHAT MAKES A MOMENT SPECIAL</span>
+            <span></span>
+          </p>
+          <h2 data-i18n="experienceTitle">더 그릴이 소중히 여기는 세 가지</h2>
+          <p data-i18n="experienceDescription">
+            한국의 식탁에서 영감을 받은 맛, 정성, 그리고 함께하는 기쁨.
+          </p>
+        </div>
+
+        <div class="experience-grid">
+          <article class="experience-card reveal">
+            <div class="experience-image">
+              <img
+                src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=85"
+                alt="Freshly grilled meat served for sharing"
+                loading="lazy">
+              <span class="card-number">01</span>
+            </div>
+            <div class="experience-copy">
+              <span class="card-kicker" data-i18n="value1Kicker">TASTE · 맛</span>
+              <h3 data-i18n="value1Title">맛에 대한 정성</h3>
+              <p class="card-english" data-i18n="value1English">Made for the Love of Food</p>
+              <p data-i18n="value1Text">
+                한국식 바비큐의 풍미와 다채로운 음식의 매력을
+                소중히 여기며, 한 끼 한 끼에 정성을 담습니다.
+              </p>
+            </div>
+          </article>
+
+          <article class="experience-card reveal">
+            <div class="experience-image">
+              <img
+                src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=85"
+                alt="Inviting restaurant dining room with warm lighting"
+                loading="lazy">
+              <span class="card-number">02</span>
+            </div>
+            <div class="experience-copy">
+              <span class="card-kicker" data-i18n="value2Kicker">HOSPITALITY · 환대</span>
+              <h3 data-i18n="value2Title">따뜻한 환대</h3>
+              <p class="card-english" data-i18n="value2English">A Place to Feel Welcome</p>
+              <p data-i18n="value2Text">
+                처음 방문하는 분도 편안하게 식사할 수 있도록
+                친절하고 배려하는 분위기를 소중히 생각합니다.
+              </p>
+            </div>
+          </article>
+
+          <article class="experience-card reveal">
+            <div class="experience-image">
+              <img
+                src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=900&q=85"
+                alt="Friends gathering around a table to share a meal"
+                loading="lazy">
+              <span class="card-number">03</span>
+            </div>
+            <div class="experience-copy">
+              <span class="card-kicker" data-i18n="value3Kicker">TOGETHERNESS · 함께</span>
+              <h3 data-i18n="value3Title">함께하는 행복</h3>
+              <p class="card-english" data-i18n="value3English">Better When Shared</p>
+              <p data-i18n="value3Text">
+                가족, 친구, 동료와 둘러앉아 나누는 음식과 대화.
+                함께하는 순간이 식사를 더욱 특별하게 만듭니다.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- KOREAN FOOD CULTURE -->
+    <section class="culture-section">
+      <div class="culture-image">
+        <img
+          src="https://images.unsplash.com/photo-1498654896293-37aacf113fd9?auto=format&fit=crop&w=1800&q=85"
+          alt="A table filled with dishes ready to share"
+          loading="lazy">
+        <div class="culture-overlay"></div>
+      </div>
+
+      <div class="container culture-content reveal">
+        <p class="eyebrow hero-eyebrow">
+          <span></span>
+          <span data-i18n="cultureEyebrow">THE BEAUTY OF KOREAN DINING</span>
+        </p>
+
+        <h2 data-i18n="cultureTitle">
+          나누는 마음이<br>한국 식문화의 아름다움입니다.
+        </h2>
+
+        <p class="culture-english" data-i18n="cultureEnglish">
+          A Culture of Sharing
+        </p>
+
+        <p data-i18n="cultureText">
+          여러 반찬을 함께 나누고, 고기가 익어 가는 동안 이야기를
+          나누고, 마지막 한 입까지 함께 즐기는 식사.
+          더 그릴은 음식을 통해 사람들을 이어 주는 한국 식문화의
+          따뜻한 매력을 소중히 생각합니다.
+        </p>
+
+        <a href="menu.html" class="culture-link">
+          <span data-i18n="exploreMenu">메뉴 둘러보기</span>
+          <span>↗</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- OUR PROMISE -->
+    <section class="promise-section section-pad">
+      <div class="container promise-layout">
+        <div class="promise-heading reveal">
+          <p class="eyebrow">
+            <span></span>
+            <span data-i18n="promiseEyebrow">OUR PROMISE</span>
+          </p>
+          <h2 data-i18n="promiseTitle">
+            음식에는 마음을,<br>손님에게는 정성을.
+          </h2>
+          <p class="promise-english" data-i18n="promiseEnglish">
+            Thoughtful Food. Heartfelt Hospitality.
+          </p>
+        </div>
+
+        <div class="promise-list">
+          <article class="promise-item reveal">
+            <span class="promise-icon">✳</span>
+            <div>
+              <h3 data-i18n="promise1Title">음식에 대한 존중</h3>
+              <p data-i18n="promise1Text">
+                재료와 조리 과정에 관심을 기울이고, 음식이 주는 즐거움을 소중히 여깁니다.
+              </p>
+            </div>
+          </article>
+
+          <article class="promise-item reveal">
+            <span class="promise-icon">♡</span>
+            <div>
+              <h3 data-i18n="promise2Title">사람을 위한 배려</h3>
+              <p data-i18n="promise2Text">
+                다양한 손님의 취향과 필요를 존중하며, 편안한 식사 경험을 지향합니다.
+              </p>
+            </div>
+          </article>
+
+          <article class="promise-item reveal">
+            <span class="promise-icon">◉</span>
+            <div>
+              <h3 data-i18n="promise3Title">함께 만드는 추억</h3>
+              <p data-i18n="promise3Text">
+                일상의 식사도 특별한 날의 식사도 즐거운 추억으로 남기를 바랍니다.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLOSING CTA -->
+    <section class="closing-section">
+      <div class="closing-image" role="img"
+        aria-label="Korean food and a welcoming restaurant atmosphere"></div>
+      <div class="closing-overlay"></div>
+
+      <div class="container closing-content reveal">
+        <p class="eyebrow hero-eyebrow">
+          <span></span>
+          <span data-i18n="closingEyebrow">COME GATHER AROUND OUR TABLE</span>
+        </p>
+        <h2 data-i18n="closingTitle">다음 맛있는 순간은<br>더 그릴에서.</h2>
+        <p data-i18n="closingText">
+          소중한 사람들과 함께하는 식사를 계획해 보세요.
+        </p>
+        <div class="closing-actions">
+          <a href="reservation.html" class="btn btn-primary">
+            <span data-i18n="closingReserve">예약하기</span><span>↗</span>
+          </a>
+          <a href="menu.html" class="btn btn-light-outline">
+            <span data-i18n="closingMenu">메뉴 보기</span><span>↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-logo"><span>더</span></span>
+        <span class="brand-text">
+          <strong>더 그릴</strong>
+          <small>THE GRILL · KOREAN BBQ</small>
+        </span>
+      </a>
+
+      <div class="footer-contact">
+        <span class="footer-symbol">⌖</span>
+        <div>
+          <strong data-i18n="footerLocation">매장 위치</strong>
+          <p>19beonji 327 Gap-dong, Yuseong District,<br>Daejeon, South Korea</p>
+          <p>대전광역시 유성구 갑동 327, 19번지</p>
+        </div>
+      </div>
+
+      <div class="footer-contact">
+        <span class="footer-symbol">☎</span>
+        <div>
+          <strong data-i18n="footerCall">전화 문의</strong>
+          <a href="tel:+82423000448">+82 42-300-0448</a>
+        </div>
+      </div>
+
+      <div class="footer-nav">
+        <a href="index.html" data-i18n="footerHome">홈</a>
+        <a href="menu.html" data-i18n="footerMenu">메뉴</a>
+        <a href="about.html" data-i18n="footerAbout">우리 이야기</a>
+        <a href="contact.html" data-i18n="footerContact">오시는 길</a>
+        <a href="reservation.html" data-i18n="footerReserve">예약하기</a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© <span id="year"></span> The Grill · 더 그릴.
+        <span data-i18n="copyright">All rights reserved.</span>
+      </p>
+      <p data-i18n="footerTagline">Good food. Happy moments.</p>
+    </div>
+  </footer>
+
+  <!-- MENU CHAT ASSISTANT -->
+  <button class="chat-launcher" id="chatLauncher"
+    type="button" aria-controls="chatPanel" aria-expanded="false">
+    <span class="launcher-icon">✳</span>
+    <span data-i18n="chatLauncher">메뉴 도우미</span>
+    <span class="chat-dot"></span>
+  </button>
+
+  <section class="chat-panel" id="chatPanel" hidden
+    role="dialog" aria-modal="false" aria-labelledby="chatTitle">
+    <div class="chat-header">
+      <div class="chat-avatar">더</div>
+      <div class="chat-heading">
+        <h2 id="chatTitle" data-i18n="chatTitle">더 그릴 메뉴 도우미</h2>
+        <p><span class="online-dot"></span>
+          <span data-i18n="chatStatus">메뉴 안내</span>
+        </p>
+      </div>
+      <button id="closeChat" class="chat-close" type="button"
+        aria-label="Close chat">×</button>
+    </div>
+
+    <div class="chat-messages" id="chatMessages" aria-live="polite">
+      <div class="message bot-message">
+        <div class="message-bubble" data-i18n="chatWelcome">
+          안녕하세요! 더 그릴 메뉴 도우미입니다. 어떤 메뉴가 궁금하신가요?
+        </div>
+      </div>
+    </div>
+
+    <div class="quick-questions" id="quickQuestions">
+      <button type="button" data-question="ingredients" data-i18n="quickIngredients">재료 안내</button>
+      <button type="button" data-question="spicy" data-i18n="quickSpicy">매운 메뉴</button>
+      <button type="button" data-question="vegetarian" data-i18n="quickVegetarian">채식 메뉴</button>
+      <button type="button" data-question="allergens" data-i18n="quickAllergens">알레르기</button>
+    </div>
+
+    <form id="chatForm" class="chat-input-row">
+      <label class="sr-only" for="chatInput">Ask about the menu</label>
+      <input id="chatInput" type="text" maxlength="400" required
+        autocomplete="off" data-i18n-placeholder="chatPlaceholder"
+        placeholder="메뉴에 관해 물어보세요...">
+      <button type="submit" aria-label="Send message">↑</button>
+    </form>
+
+    <p class="chat-disclaimer" data-i18n="chatDisclaimer">
+      자동 안내 도우미입니다. 실제 메뉴와 알레르기는 매장에 확인해 주세요.
+    </p>
+  </section>
+</body>
+</html>
